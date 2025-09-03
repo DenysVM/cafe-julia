@@ -1,0 +1,14 @@
+/* Base page styles — Chakra handles most UI. */
+html, body, #root { height: 100%; }
+body { margin: 0; background: #fff; }
+
+/* Simple skeleton shimmer used in MenuCard */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, rgba(0,0,0,0.06) 25%, rgba(0,0,0,0.12) 37%, rgba(0,0,0,0.06) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.2s infinite linear;
+}
