@@ -1,4 +1,4 @@
-import { Box, Container, Text } from "@chakra-ui/react";
+import { Box, Container, Text, Link } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
@@ -6,8 +6,8 @@ export default function Footer() {
       <Container maxW="container.lg" textAlign="center">
         <Text mb={2}>&copy; {new Date().getFullYear()} Кафе Юлія</Text>
         <Text fontSize="sm" opacity={0.85}>Зроблено з любов’ю до гостинності</Text>
+        <Text fontSize="sm" opacity={0.85}>Розробник: <Link href="https://denysvm.github.io/bc/" isExternal target="_blank" rel="noopener noreferrer" color="sand.50">Денис Муратов</Link></Text>
       </Container>
     </Box>
   );
 }
-
